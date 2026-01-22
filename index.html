@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuj Patel - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Anuj Patel</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="image.png" alt="Anuj Patel - Software Engineer" class="profile-img">
+            <h1>Hi, I'm <span class="highlight">Anuj Patel</span></h1>
+            <h2>Software Engineer | AI/ML Enthusiast</h2>
+            <p>Recent graduate building full-stack web apps and machine learning solutions for agriculture and data analytics.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Software Engineering B.Tech graduate from India with Postgraduate Diplomas in Full Stack Web Development (MacEwan University) and Integrated AI (SAIT). Passionate about creating impactful ML models and responsive web applications. Currently job hunting in Calgary while building practical projects on Kaggle and GitHub.</p>
+                <p>Skills: Python, React, SQL, Machine Learning, Data Analytics, CRISP-DM methodology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Frontend</h3>
+                <ul>
+                    <li>HTML5/CSS3</li>
+                    <li>JavaScript/React</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Backend/ML</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Machine Learning</li>
+                    <li>SQL/PostgreSQL</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Tools</h3>
+                <ul>
+                    <li>VS Code</li>
+                    <li>Git/GitHub</li>
+                    <li>Kaggle</li>
+                    <li>R studio</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://picsum.photos/400/250?random=1" alt="Project 1">
+                <h3>Agriculture ML Predictor</h3>
+                <p>Crop yield prediction model using Python & Scikit-learn (95% accuracy). Kaggle dataset analysis.</p>
+                <div class="project-links">
+                    <a href="#">GitHub</a>
+                    <a href="#">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://picsum.photos/400/250?random=2" alt="Project 2">
+                <h3>Portfolio Website</h3>
+                <p>Fully responsive single-page portfolio built with HTML/CSS/JS. Mobile-first design approach.</p>
+                <div class="project-links">
+                    <a href="#">Code</a>
+                    <a href="#">View Site</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://picsum.photos/400/250?random=3" alt="Project 3">
+                <h3>E-commerce Dashboard</h3>
+                <p>React dashboard with Chart.js for sales analytics. Full-stack with Node.js backend.</p>
+                <div class="project-links">
+                    <a href="#">GitHub</a>
+                    <a href="#">Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="contact-content">
+            <p>Let's connect! Open to collaborations, freelance, or full-time opportunities in Calgary.</p>
+            <div class="contact-links">
+                <a href="mailto:panuj7883@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/anujpatel8591/">LinkedIn</a>
+                <a href="https://github.com/AnujPatel089">GitHub</a>
+            </div>
+            <p>Calgary, AB | 780-887-1283</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Anuj Patel. Built with HTML/CSS. | <a href="Resume.pdf">View Resume PDF</a></p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
