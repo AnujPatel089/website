@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anuj Patel - Portfolio</title>
+    <title>Anuj Patel | AI & Machine Learning Portfolio</title>
+    <meta name="description" content="AI & Data Science student portfolio featuring machine learning, full-stack AI applications, NLP, fraud detection, and data analytics projects.">
+    <meta name="keywords" content="Anuj Patel, AI portfolio, machine learning portfolio, data science, Python, Scikit-learn, Streamlit, Flask, FastAPI, SQL">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -16,6 +18,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#learning">Learning</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -105,15 +108,72 @@
         </div>
     </section>
 
+    <!-- Currently Learning Section -->
+    <section id="learning" class="learning">
+        <h2>Currently Learning</h2>
+        <div class="learning-grid">
+            <span>Docker</span>
+            <span>CI/CD</span>
+            <span>MLOps</span>
+            <span>LangChain</span>
+            <span>Vector Databases</span>
+            <span>Advanced NLP</span>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <h2>Projects</h2>
+        <h3 class="projects-label">Featured Projects</h3>
         <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://picsum.photos/400/250?random=7" alt="Credit Card Fraud AI Platform">
+                <h3>Credit Card Fraud AI Platform</h3>
+                <p>Fraud detection platform that identifies suspicious credit card transactions with ML classification, risk scoring, and transaction analysis.</p>
+                <div class="project-details">
+                    <p><strong>Problem:</strong> Financial teams need faster ways to flag suspicious transactions before fraud creates losses.</p>
+                    <p><strong>Solution:</strong> Built an ML classification workflow that analyzes transaction features and outputs a fraud risk score.</p>
+                    <p><strong>Result:</strong> Supports risk scoring, transaction analysis, and fraud/no-fraud prediction.</p>
+                </div>
+                <div class="project-flow">
+                    <span>Transaction Data</span>
+                    <span>Feature Engineering</span>
+                    <span>Fraud Model</span>
+                    <span>Risk Score</span>
+                </div>
+                <div class="tech-badges">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Scikit-learn</span>
+                    <span>Streamlit</span>
+                    <span>Data Visualization</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/AnujPatel089/credit-card-fraud-ai-platform">GitHub</a>
+                </div>
+            </div>
             <div class="project-card">
                 <img src="https://picsum.photos/400/250?random=1" alt="Resume Screening AI">
                 <h3>Resume Screening AI</h3>
                 <p>NLP resume classifier that preprocesses resume text and predicts candidate categories through a Streamlit interface.</p>
-                <p><strong>Tech Stack:</strong> Python, Scikit-learn, NLTK, TF-IDF, Logistic Regression, Streamlit</p>
+                <div class="project-details">
+                    <p><strong>Problem:</strong> Manual resume screening is slow and inconsistent when reviewing large candidate pools.</p>
+                    <p><strong>Solution:</strong> Built an NLP pipeline for text cleaning, TF-IDF vectorization, and ML-based resume category prediction.</p>
+                    <p><strong>Result:</strong> Demonstrates NLP preprocessing, document classification, and interactive prediction workflows.</p>
+                </div>
+                <div class="project-flow">
+                    <span>Upload Resume</span>
+                    <span>NLP Processing</span>
+                    <span>TF-IDF</span>
+                    <span>Prediction</span>
+                </div>
+                <div class="tech-badges">
+                    <span>Python</span>
+                    <span>Scikit-learn</span>
+                    <span>NLTK</span>
+                    <span>TF-IDF</span>
+                    <span>Streamlit</span>
+                </div>
                 <div class="project-links">
                     <a href="https://github.com/AnujPatel089/resume-screening-ai">GitHub</a>
                 </div>
@@ -122,7 +182,24 @@
                 <img src="https://picsum.photos/400/250?random=2" alt="Loan Approval Prediction System">
                 <h3>Loan Approval Prediction System</h3>
                 <p>Full-stack ML application that predicts loan approval decisions and manages prediction history through connected frontend and backend workflows.</p>
-                <p><strong>Tech Stack:</strong> Python, Flask, SQLite, SQLAlchemy, HTML/CSS/JS, Scikit-learn</p>
+                <div class="project-details">
+                    <p><strong>Problem:</strong> Loan decisions need consistent evaluation across applicant financial and profile data.</p>
+                    <p><strong>Solution:</strong> Built a Flask-backed ML app with prediction APIs, data storage, and approval classification.</p>
+                    <p><strong>Result:</strong> Combines classification, REST integration, and stored prediction history.</p>
+                </div>
+                <div class="project-flow">
+                    <span>Applicant Data</span>
+                    <span>Validation</span>
+                    <span>ML Model</span>
+                    <span>Approval Result</span>
+                </div>
+                <div class="tech-badges">
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>SQLite</span>
+                    <span>SQLAlchemy</span>
+                    <span>Scikit-learn</span>
+                </div>
                 <div class="project-links">
                     <a href="https://github.com/AnujPatel089/loan-approval-prediction-system">GitHub</a>
                 </div>
@@ -131,26 +208,51 @@
                 <img src="https://picsum.photos/400/250?random=3" alt="Predictive Customer Analytics System">
                 <h3>Predictive Customer Analytics System</h3>
                 <p>Customer analytics dashboard for segmentation, churn prediction, CLV analysis, KPI tracking, and business insight reporting.</p>
-                <p><strong>Tech Stack:</strong> Python, Pandas, Scikit-learn, SQL, Streamlit, Data Visualization</p>
+                <div class="project-details">
+                    <p><strong>Problem:</strong> Businesses need clearer customer insights to identify churn risk and high-value segments.</p>
+                    <p><strong>Solution:</strong> Built analytics workflows for RFM segmentation, churn analysis, CLV estimation, and dashboard reporting.</p>
+                    <p><strong>Result:</strong> Provides customer segmentation, churn analysis, KPI visibility, and data-driven insights.</p>
+                </div>
+                <div class="project-flow">
+                    <span>Customer Data</span>
+                    <span>RFM Analysis</span>
+                    <span>Churn Model</span>
+                    <span>Dashboard</span>
+                </div>
+                <div class="tech-badges">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Scikit-learn</span>
+                    <span>SQL</span>
+                    <span>Streamlit</span>
+                </div>
                 <div class="project-links">
                     <a href="https://github.com/AnujPatel089/customer-intelligence-system">GitHub</a>
                     <a href="https://customer-intelligence-system-xshymtunan7ubdpxnwzs5q.streamlit.app/">Live Demo</a>
                 </div>
             </div>
             <div class="project-card">
-                <img src="https://picsum.photos/400/250?random=7" alt="Credit Card Fraud AI Platform">
-                <h3>Credit Card Fraud AI Platform</h3>
-                <p>Fraud detection platform that identifies suspicious credit card transactions with ML classification, risk scoring, and transaction analysis.</p>
-                <p><strong>Tech Stack:</strong> Python, Pandas, Scikit-learn, Machine Learning, Streamlit, Data Visualization</p>
-                <div class="project-links">
-                    <a href="https://github.com/AnujPatel089/credit-card-fraud-ai-platform">GitHub</a>
-                </div>
-            </div>
-            <div class="project-card">
                 <img src="https://picsum.photos/400/250?random=4" alt="Pipeline Failure Detection AI">
                 <h3>Pipeline Failure Detection AI</h3>
                 <p>AI monitoring project for detecting pipeline failure patterns, analyzing operational data, and supporting risk-based incident workflows.</p>
-                <p><strong>Tech Stack:</strong> Python, Pandas, Scikit-learn, Anomaly Detection, Data Visualization, Streamlit</p>
+                <div class="project-details">
+                    <p><strong>Problem:</strong> Operational pipelines can fail silently without early warning signals from system data.</p>
+                    <p><strong>Solution:</strong> Built a detection workflow that processes pipeline metrics and flags potential failure patterns.</p>
+                    <p><strong>Result:</strong> Supports anomaly detection, risk-based alerts, and failure analysis workflows.</p>
+                </div>
+                <div class="project-flow">
+                    <span>Pipeline Data</span>
+                    <span>Preprocessing</span>
+                    <span>Anomaly Detection</span>
+                    <span>Alert</span>
+                </div>
+                <div class="tech-badges">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Scikit-learn</span>
+                    <span>Anomaly Detection</span>
+                    <span>Streamlit</span>
+                </div>
                 <div class="project-links">
                     <a href="https://github.com/AnujPatel089/pipeline-failure-detection-ai">GitHub</a>
                 </div>
@@ -162,7 +264,7 @@
     <section id="contact" class="contact">
         <h2>Contact</h2>
         <div class="contact-content">
-            <p>Let's connect! Open to collaborations, freelance, or full-time opportunities in Calgary.</p>
+            <p>Let's connect for AI, Data Science, Machine Learning, or Software Engineering opportunities.</p>
             <div class="contact-links">
                 <a href="mailto:panuj7883@gmail.com">Email</a>
                 <a href="https://www.linkedin.com/in/anujpatel8591/">LinkedIn</a>
@@ -175,7 +277,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Anuj Patel. Built with HTML/CSS. | <a href="Resume.pdf">View Resume PDF</a></p>
+        <p>&copy; 2026 Anuj Patel. Built with HTML, CSS, JavaScript, and passion for AI engineering. | <a href="Resume.pdf">View Resume PDF</a></p>
     </footer>
 
     <script>
@@ -201,9 +303,6 @@
 </body>
 
 </html>
-
-
-
 
 
 

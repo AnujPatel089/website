@@ -212,7 +212,37 @@ h2 {
     font-weight: 500;
 }
 
+/* Currently Learning */
+.learning {
+    background: #f8f9ff;
+}
+
+.learning-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.learning-grid span {
+    background: white;
+    color: #667eea;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    font-weight: 600;
+    padding: 0.75rem 1.25rem;
+}
+
 /* Projects */
+.projects-label {
+    color: #667eea;
+    font-size: 1.3rem;
+    margin: -1rem 0 1.5rem;
+    text-align: center;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -248,16 +278,70 @@ h2 {
     color: #666;
 }
 
+.project-details {
+    padding: 0 1.5rem 1.5rem;
+}
+
+.project-details p {
+    font-size: 0.95rem;
+    padding: 0;
+    margin-bottom: 0.75rem;
+}
+
+.project-flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0 1.5rem 1.5rem;
+}
+
+.project-flow span {
+    background: #f8f9ff;
+    border: 1px solid #e1e5ff;
+    border-radius: 10px;
+    color: #555;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 0.4rem 0.65rem;
+}
+
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0 1.5rem 1.5rem;
+}
+
+.tech-badges span {
+    background: #f0f2ff;
+    color: #667eea;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.35rem 0.75rem;
+}
+
 .project-links {
     padding: 0 1.5rem 1.5rem;
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
 .project-links a {
-    color: #667eea;
+    background: #667eea;
+    border-radius: 50px;
+    color: white;
+    display: inline-block;
+    padding: 0.55rem 1rem;
     text-decoration: none;
     font-weight: 600;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.project-links a:hover {
+    background: #764ba2;
+    transform: translateY(-2px);
 }
 
 /* Contact */
@@ -345,6 +429,16 @@ footer a {
     .skills-grid,
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .learning-grid {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .learning-grid span {
+        text-align: center;
+        width: min(100%, 280px);
     }
     
     .contact-links {
