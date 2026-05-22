@@ -346,10 +346,11 @@ section h2 {
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
     overflow: hidden;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     display: flex;
     flex-direction: column;
+    min-height: 500px;
 }
 
 .project-card:hover {
@@ -608,6 +609,8 @@ footer a:hover { text-decoration: underline; }
     .skill-card { min-height: auto; }
 
     .projects-grid { grid-template-columns: 1fr; }
+
+    .project-card { min-height: auto; }
 
     .contact-links {
         flex-direction: column;
