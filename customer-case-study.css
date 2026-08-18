@@ -1,0 +1,54 @@
+.customer-case-body .case-hero {
+    background: linear-gradient(135deg, #12372a 0%, #1f6f50 55%, #2f8f66 100%);
+}
+
+.customer-case-body .section-eyebrow,
+.customer-case-body .customer-accent {
+    color: #1f7a55;
+}
+
+.customer-case-body .customer-callout {
+    margin-top: 1.5rem;
+    padding: 1rem 1.15rem;
+    border-left: 4px solid #d97706;
+    background: #fff8e8;
+    border-radius: 0 8px 8px 0;
+    line-height: 1.65;
+}
+
+.customer-case-body .customer-success {
+    border-left-color: #1f7a55;
+    background: #eefaf4;
+}
+
+.customer-case-body .metric-note {
+    display: block;
+    margin-top: 0.35rem;
+    color: #64748b;
+    font-size: 0.86rem;
+    line-height: 1.55;
+}
+
+.customer-case-body .case-card ul {
+    padding-left: 1.1rem;
+    margin-top: 0.65rem;
+}
+
+.customer-case-body .case-card li {
+    margin-bottom: 0.45rem;
+    line-height: 1.55;
+}
+
+.customer-case-body .flow-node strong {
+    color: #164e3a;
+}
+
+.customer-case-body .case-footer-cta {
+    background: linear-gradient(135deg, #12372a 0%, #1f6f50 100%);
+}
+
+@media (max-width: 768px) {
+    .customer-case-body .customer-callout {
+        margin-top: 1rem;
+    }
+}
